@@ -2,9 +2,9 @@ package org.springframework.samples.petclinic.sfg;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.samples.petclinic.sfg.HearingInterpreter;
-import org.springframework.samples.petclinic.sfg.LaurelWordProducer;
+import org.springframework.context.annotation.Profile;
 
+@Profile("base-test")
 @Configuration
 public class LaurelConfig {
 
